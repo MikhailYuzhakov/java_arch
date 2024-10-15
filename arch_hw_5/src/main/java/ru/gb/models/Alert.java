@@ -1,7 +1,7 @@
 package ru.gb.models;
 
 public class Alert {
-    private String message;
+    private final String message;
 
     public Alert(String message) {
         this.message = message;

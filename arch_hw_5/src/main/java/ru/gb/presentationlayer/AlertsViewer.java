@@ -1,10 +1,15 @@
 package ru.gb.presentationlayer;
 
+import ru.gb.applicationlayer.EventListener;
 import ru.gb.applicationlayer.IEventListener;
 import ru.gb.models.Alert;
 
 public class AlertsViewer implements IAlertsViewer{
-    private IEventListener eventListener;
+    private final IEventListener eventListener;
+
+    public AlertsViewer() {
+        eventListener = new EventListener();
+    }
 
     @Override
     public void action() {
